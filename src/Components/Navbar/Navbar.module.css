@@ -1,0 +1,76 @@
+.Navbar{
+    width: 100vw;
+    display: flex;
+    height: 13vh;
+    padding: .75% 1.75%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+.NavbarLogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 12%;
+}
+.BrandName{
+    font-size: 1.7em;
+    font-weight: 500;
+}
+
+.NavbarLinks{
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    font-weight: 500;
+}
+
+.loggedIn{
+    width: 25%;
+}
+
+.active{
+    color: bisque;
+    opacity: 1;
+}
+
+@media (max-width:1024px){
+    .Navbar{
+        padding: 0.75% 3%;
+    }
+    .NavbarLinks{
+        width: 25%;
+    }
+    .loggedIn{
+        width: 35%;
+    }
+}
+@media (max-width:768px){
+    .Navbar{
+        padding: 0.75% 6%;
+    }
+    .NavbarLinks{
+        width: 37%;
+    }
+    .loggedIn{
+        width: 55%;
+    }
+}
+
+@media (max-width:425px){
+    .NavbarLogo{
+        width: 30%;
+    }
+    .BrandName{
+        font-size: 1.1em;
+    }
+    .NavbarLinks{
+        width: 58%;
+        font-size: 0.8em;
+    }
+    .loggedIn{
+        width: 85%;
+        font-size: 0.75em;
+    }
+}

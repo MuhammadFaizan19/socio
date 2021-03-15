@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
 
-function App() {
+import LandingPage from './Components/LandingPage/LandingPage'
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-    </div>
+    <LandingPage />
   );
 }
 

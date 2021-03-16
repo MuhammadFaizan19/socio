@@ -7,23 +7,31 @@ import Navbar from './Components/Navbar/Navbar'
 import Signup from './Components/Forms/Signup';
 import Login from './Components/Forms/Login';
 import Contact from './Components/Forms/Contact';
+import Feed from './Components/Feed/Feed';
 
 interface AppProps {
   isLoggedIn: boolean
 }
 
 const App: React.FC<AppProps> = ({ isLoggedIn }) => {
+  const a = true;
   return (
     <div className={classes.Container} >
-      <Navbar isLoggedIn={false} />
-      <Switch>
-        <Route path='/' exact component={Landing} />
-        <Route path='/signup' exact component={Signup} />
-        <Route path='/login' exact component={Login} />
-        <Route path='/contact' exact component={Contact} />
-      </Switch>
+      <Navbar isLoggedIn={a} />
+      {!a &&
+        <Switch>
+          <Route path='/' exact component={Landing} />
+          <Route path='/signup' exact component={Signup} />
+          <Route path='/login' exact component={Login} />
+          <Route path='/contact' exact component={Contact} />
+        </Switch>
+      }
+      {a &&
+        <Switch>
+          <Route path='/feed' exact component={Feed} />
+        </Switch>
+      }
     </div >
-
 
   );
 }

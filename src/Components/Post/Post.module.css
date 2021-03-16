@@ -1,0 +1,81 @@
+.Container{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.PostedBy{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: #4aabef;
+}
+
+.PostedBy p{
+    display: flex;
+    flex-flow: column;
+}
+.PostedBy p span{
+    font-size: 0.6em;
+}
+
+.PostedBy img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.Post{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.Post p{
+    color: #ccc;
+}
+
+.Post img{
+    max-width: 100%;
+    max-height: 600px;
+}
+
+.PostBtns{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.PostBtns button{
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    color: rgb(8, 39, 59);
+    font-weight: bold;
+    background: linear-gradient(40deg,#5e91dd,#1335f5);
+    transition: transform 0.2s ease-in-out;
+}
+
+.PostBtns button:hover{
+    transform: scale(1.04);
+}
+
+@media (max-width:768px){
+    .PostBtns button{
+        width: 130px;
+    }
+}
+
+@media (max-width:425px){
+    .PostBtns button{
+        width: 80px;
+        height: 30px;
+    }
+    .Post p{
+        font-size: 13px;
+    }
+}

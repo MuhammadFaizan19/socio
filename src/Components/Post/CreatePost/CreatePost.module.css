@@ -1,0 +1,153 @@
+.Container{
+    box-shadow: 0 0 10px #4aabef;
+    transition: transform 0.2s ease-out;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.Create{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 120px;
+    align-items: flex-end;
+    padding: 10px;
+}
+.Container:hover{
+    transform: scale(1.02);
+}
+.Text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+	color:#4aabef;	
+
+}
+.InputContainer{
+	position:relative;
+    width: 60%;
+}
+.InputContainer label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color:#4aabef;	
+	transition: all 0.3s ease-in-out;
+}
+.InputContainer textarea{ 
+    border:0;
+    outline: none;
+    border-bottom:1px solid #4aabef;  
+    background:transparent;
+    width:100%;
+    resize: none;
+    padding:8px 0 5px 0;
+    font-size:16px;
+    color:#a0d1f3;
+  }
+
+.InputContainer textarea:focus ~ label,
+.InputContainer textarea:valid ~ label{
+	top:-20px;
+	font-size:12px;
+	
+}
+
+.Buttons{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.CreateBtn{
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    color: rgb(9, 152, 247);
+    font-weight: bold;
+    background: linear-gradient(40deg,#2c5fac,#273cb4);
+    transition: transform 0.2s ease-out;
+}
+
+.CreateBtn:hover{
+    transform: scale(1.02);
+}
+
+.File {
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+  }
+  
+  .FileInput label {
+    display: block;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    background: linear-gradient(40deg,#2c5fac,#273cb4);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(9, 152, 247);
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform .2s ease-out;
+  }
+  
+  .FileName {
+    position: absolute;
+    bottom: -35px;
+    left: 10px;
+    font-size: 1rem;
+    color: rgb(9, 152, 247);
+  }
+  
+  input:hover + label,
+  input:focus + label {
+    transform: scale(1.02);
+  }
+  
+
+
+  
+  @media (max-width:768px){
+      .FileInput label{
+          width: 130px;
+      }
+      .CreateBtn{
+          width: 130px;
+      }
+      .InputContainer{
+          width: 65%;
+      }
+  }
+
+  @media (max-width:425px){
+    .Text{
+        font-size: 17px;
+    }
+    .FileInput label{
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .FileName{
+        font-size: 0.6rem;
+        bottom: -30px;
+        left: 4px;
+    }
+    .CreateBtn{
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .InputContainer{
+        width: 70%;
+    }
+}

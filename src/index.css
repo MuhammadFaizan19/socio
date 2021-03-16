@@ -9,11 +9,11 @@ html {
 
 body {
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   font-size: 1.6rem;
   font-family: 'Raleway', sans-serif;
   color: #ffffff;
-  background-color: rgb(1,10,10);
+  background-color: rgb(1,19,19);
 }
 div{
     display: block;

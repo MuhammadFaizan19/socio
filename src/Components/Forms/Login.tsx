@@ -5,7 +5,7 @@ const login: React.FC = () => {
     return (
         <div className={classes.Container}>
             <form>
-                <span className={classes.TextCenter}>LOGIN</span>
+                <span>LOGIN</span>
                 <div className={classes.InputContainer}>
                     <input type="email" required />
                     <label>Email</label>

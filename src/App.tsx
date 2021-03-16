@@ -6,6 +6,7 @@ import Landing from './Components/Landing/Landing';
 import Navbar from './Components/Navbar/Navbar'
 import Signup from './Components/Forms/Signup';
 import Login from './Components/Forms/Login';
+import Contact from './Components/Forms/Contact';
 
 interface AppProps {
   isLoggedIn: boolean
@@ -19,8 +20,8 @@ const App: React.FC<AppProps> = ({ isLoggedIn }) => {
         <Route path='/' exact component={Landing} />
         <Route path='/signup' exact component={Signup} />
         <Route path='/login' exact component={Login} />
+        <Route path='/contact' exact component={Contact} />
       </Switch>
-
     </div >
 
 

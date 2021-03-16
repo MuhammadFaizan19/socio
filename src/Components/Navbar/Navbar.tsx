@@ -17,23 +17,24 @@ const navbar: React.FC<NavbarProps> = ({ isLoggedIn }) => {
                     height='50px'
                     className='d-inline-block align-top'
                 />{' '}
-                {!isLoggedIn && <NavLink className={classes.BrandName} to='/' ><i>SOCIO</i></NavLink>}
+                <NavLink className={`${classes.BrandName} ${classes.Link}` } to='/' ><i>SOCIO</i></NavLink>
             </div>
 
             {!isLoggedIn &&
                 <div className={classes.NavbarLinks} >
-                    <NavLink activeClassName={classes.active} to='/contact' >Contact</NavLink>
-                    <NavLink activeClassName={classes.active} to='/about' >About</NavLink>
-                    <NavLink activeClassName={classes.active} to='/login' >Login</NavLink>
+                    <NavLink className={classes.Link}  to='/contact' >Contact</NavLink>
+                    <NavLink className={classes.Link}  to='/about' >About</NavLink>
+                    <NavLink className={classes.Link}  to='/signup' >Signup</NavLink>
+                    <NavLink className={classes.Link}  to='/login' >Login</NavLink>
                 </div>
             }
             {isLoggedIn &&
                 <div className={`${classes.NavbarLinks} ${classes.loggedIn}`} >
-                    <NavLink activeClassName={classes.active} to='/feed' >Feed</NavLink>
-                    <NavLink activeClassName={classes.active} to='/notifications' >Notifications</NavLink>
-                    <NavLink activeClassName={classes.active} to='/search' >Search</NavLink>
-                    <NavLink activeClassName={classes.active} to='/profile' >Profile</NavLink>
-                    <NavLink activeClassName={classes.active} to='/logout' >Logout</NavLink>
+                    <NavLink className={classes.Link}  to='/feed' >Feed</NavLink>
+                    <NavLink className={classes.Link}  to='/notifications' >Notifications</NavLink>
+                    <NavLink className={classes.Link}  to='/search' >Search</NavLink>
+                    <NavLink className={classes.Link}  to='/profile' >Profile</NavLink>
+                    <NavLink className={classes.Link}  to='/logout' >Logout</NavLink>
                 </div>
             }
 

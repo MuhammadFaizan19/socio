@@ -5,7 +5,8 @@
     padding: .75% 1.75%;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #27367d;
+    background-color: #000;
 }
 
 .NavbarLogo{
@@ -27,12 +28,26 @@
 }
 
 .loggedIn{
-    width: 25%;
+    width: 30%;
 }
 
-.active{
-    color: bisque;
+.Link{
+    text-decoration: none;
+    color: rgb(57 159 255);
+    opacity: 0.8;
+    transition: all 0.3s linear;
+    outline: none;
+}
+  
+.Link:hover{
     opacity: 1;
+    text-decoration: none;
+    color: rgb(136 195 251);
+}
+.Link:focus{
+    opacity: 1;
+    text-decoration: none;
+    color: rgb(136 195 251);
 }
 
 @media (max-width:1024px){
@@ -43,7 +58,7 @@
         width: 25%;
     }
     .loggedIn{
-        width: 35%;
+        width: 40%;
     }
 }
 @media (max-width:768px){
@@ -63,7 +78,7 @@
         width: 30%;
     }
     .BrandName{
-        font-size: 1.1em;
+        display: none;
     }
     .NavbarLinks{
         width: 58%;
@@ -74,3 +89,13 @@
         font-size: 0.75em;
     }
 }
+
+@media (max-width:320px){
+    .loggedIn{
+        font-size: 0.65em;
+    }
+    .NavbarLinks{
+        font-size: 0.7em;
+    }
+}
+

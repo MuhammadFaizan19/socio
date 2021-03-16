@@ -1,0 +1,52 @@
+
+.Main{
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    top: 20vh;
+    text-align: center;
+    animation: onLoad 1s 0s 1 linear;
+  }
+  
+  .Name h1{
+    font-size: 4.5em;
+    color: #235c8e;
+  }
+  .Name h3{
+    font-size: 2em;
+    color: #235c8e;
+  }
+  
+  .RegisterBtn{
+    outline: none;
+    border: none;
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(12 20 66);
+    color: rgb(18, 129, 233);
+    transition: all 0.3s linear;
+  }
+  
+  .RegisterBtn:hover{
+    background-color: rgb(27 37 90);
+  }
+  .RegisterBtn:focus{
+    background-color: rgb(27 37 90);
+  }
+  
+  .BtnLink{
+    width: inherit;
+    height: inherit;
+    text-decoration: none;
+  }
+  
+  @keyframes onLoad{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }

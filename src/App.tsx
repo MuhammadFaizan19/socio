@@ -1,11 +1,29 @@
 import React from 'react';
-import './App.css';
+import { Route, Switch } from 'react-router-dom'
+import classes from './App.module.css';
+import Landing from './Components/Landing/Landing';
 
-import LandingPage from './Components/LandingPage/LandingPage'
+import Navbar from './Components/Navbar/Navbar'
+import Signup from './Components/Forms/Signup';
+import Login from './Components/Forms/Login';
 
-const App: React.FC = () => {
+interface AppProps {
+  isLoggedIn: boolean
+}
+
+const App: React.FC<AppProps> = ({ isLoggedIn }) => {
   return (
-    <LandingPage />
+    <div className={classes.Container} >
+      <Navbar isLoggedIn={false} />
+      <Switch>
+        <Route path='/' exact component={Landing} />
+        <Route path='/signup' exact component={Signup} />
+        <Route path='/login' exact component={Login} />
+      </Switch>
+
+    </div >
+
+
   );
 }
 

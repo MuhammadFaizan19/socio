@@ -13,20 +13,9 @@ body {
   font-size: 1.6rem;
   font-family: 'Raleway', sans-serif;
   color: #ffffff;
-  background-color: rgb(21, 21, 21);
-  transition: background 0.3s linear;
+  background-color: rgb(1,10,10);
 }
 div{
     display: block;
 }
-a{
-  text-decoration: none;
-  color: bisque;
-  opacity: 0.8;
-}
 
-a:hover{
-  opacity: 1;
-  text-decoration: none;
-  color: bisque;
-}

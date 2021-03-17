@@ -31,22 +31,16 @@
     border-radius: 50%;
 }
 
-.Info{
-    font-size: 0.9em;
-}
 
-.Info button{
-    border: none;
-    outline: none;
-    width: 150px;
-    height: 40px;
-    border-radius: 25px;
-    color: rgb(7, 17, 24);
-    font-weight: bold;
-    background: linear-gradient(30deg,#73145b,#330dde);
-    transition: transform 0.2s ease-in-out;
-}
-
-.Info button:hover{
-    transform: scale(1.04);
+@media (max-width:425px){
+    .User{
+        margin: 10px;
+    }
+    .User img{
+        width: 80px;
+        height: 80px;
+    }
+    .User p{
+        font-size: 0.9em;
+    }
 }

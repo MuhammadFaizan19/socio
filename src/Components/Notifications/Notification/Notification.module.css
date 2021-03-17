@@ -1,0 +1,28 @@
+.Container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    cursor: pointer;
+    color: rgb(168, 207, 233);
+    transition: background 0.3s ease-out;
+}
+
+.Container:hover{
+    background-color: #111111;
+}
+
+.Container img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.Container div:first-child{
+    display: flex;
+    align-items: center;
+}
+
+.Date{
+    font-size: 0.8em;
+}

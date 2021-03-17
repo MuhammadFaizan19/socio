@@ -1,0 +1,19 @@
+.Container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: rgb(168, 207, 233);
+    padding: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease-out;
+}
+.Container img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.Container:hover{
+    background-color: #111111;
+}

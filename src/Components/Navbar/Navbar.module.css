@@ -1,7 +1,7 @@
 .Navbar{
     width: 100vw;
     display: flex;
-    height: 13vh;
+    height: 10vh;
     padding: .75% 1.75%;
     justify-content: space-between;
     align-items: center;

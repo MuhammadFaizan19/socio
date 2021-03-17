@@ -6,6 +6,33 @@
   animation: onLoad 1.5s 0s 1 linear ;
 }
 
+.Inner{
+  position: relative;
+  left: 25vw;
+  width: 50vw;
+}
+
+@media (max-width:1024px){
+  .Inner{
+      width: 60vw;
+      left: 20vw;
+  }
+}
+
+@media (max-width:768px){
+  .Inner{
+      width: 80vw;
+      left: 10vw;
+  }
+}
+
+@media (max-width:425px){
+  .Inner{
+      width: 100vw;
+      left: 0vw;
+  }
+}
+
 @keyframes onLoad{
   0%{
       opacity: 0;

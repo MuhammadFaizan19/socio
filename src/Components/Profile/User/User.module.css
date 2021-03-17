@@ -1,0 +1,52 @@
+.Container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #4aabef;
+}
+
+.Text{
+    width: 17vw;
+    font-size: 0.8em;
+}
+
+.User{
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.User p{
+    display: flex;
+    flex-flow: column;
+    font-size: 1.2em;
+}
+.User p span{
+    font-size: 0.7em;
+}
+
+.User img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.Info{
+    font-size: 0.9em;
+}
+
+.Info button{
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    color: rgb(7, 17, 24);
+    font-weight: bold;
+    background: linear-gradient(30deg,#73145b,#330dde);
+    transition: transform 0.2s ease-in-out;
+}
+
+.Info button:hover{
+    transform: scale(1.04);
+}

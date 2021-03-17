@@ -14,8 +14,10 @@ const post: React.FC = () => {
             </div>
             <div className={classes.PostBtns} >
                 <button>Like</button>
+                <button>Comment</button>
                 <button>Share</button>
             </div>
+            <p>~~12 likes ~~3 comments ~~1 share</p>
         </div>
     )
 }

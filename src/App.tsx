@@ -8,6 +8,7 @@ import Signup from './Components/Forms/Signup';
 import Login from './Components/Forms/Login';
 import Contact from './Components/Forms/Contact';
 import Feed from './Components/Feed/Feed';
+import Profile from './Components/Profile/Profile';
 
 interface AppProps {
   isLoggedIn: boolean
@@ -29,6 +30,7 @@ const App: React.FC<AppProps> = ({ isLoggedIn }) => {
       {a &&
         <Switch>
           <Route path='/feed' exact component={Feed} />
+          <Route path='/profile' exact component={Profile} />
         </Switch>
       }
     </div >

@@ -1,7 +1,7 @@
 import React from 'react'
 import Profile from '../Profile/Profile'
 import classes from './Search.module.css'
-import SearchResult from './SearchResult/SearchResult'
+import SearchResult from '../../Components/SearchResult/SearchResult'
 
 const search: React.FC = () => {
     return (

@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    color: #4aabef;
 }
 
 .Text{
@@ -19,15 +18,16 @@
 .User p{
     display: flex;
     flex-flow: column;
-    font-size: 1.2em;
+    font-size: 1em;
+    margin-left: 20px;
 }
 .User p span{
-    font-size: 0.7em;
+    font-size: 0.6em;
 }
 
 .User img{
-    width: 120px;
-    height: 120px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
 }
 

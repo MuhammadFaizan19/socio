@@ -3,14 +3,14 @@ import { Route, Switch } from 'react-router-dom'
 import classes from './App.module.css';
 import Landing from './Components/Landing/Landing';
 
-import Navbar from './Components/Navbar/Navbar'
-import Signup from './Components/Forms/Signup';
-import Login from './Components/Forms/Login';
-import Contact from './Components/Forms/Contact';
-import Feed from './Components/Feed/Feed';
-import Profile from './Components/Profile/Profile';
-import Notifications from './Components/Notifications/Notifications';
-import Search from './Components/Search/Search';
+import Navbar from './Layout/Navbar/Navbar'
+import Signup from './Containers/Forms/Signup';
+import Login from './Containers/Forms/Login';
+import Contact from './Containers/Forms/Contact';
+import Feed from './Containers/Feed/Feed';
+import Profile from './Containers/Profile/Profile';
+import Notifications from './Containers/Notifications/Notifications';
+import Search from './Containers/Search/Search';
 
 interface AppProps {
   isLoggedIn: boolean

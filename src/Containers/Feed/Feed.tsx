@@ -1,6 +1,6 @@
 import React from 'react'
-import CreatePost from '../Post/CreatePost/CreatePost'
-import Post from '../Post/Post'
+import CreatePost from '../../Components/CreatePost/CreatePost'
+import Post from '../../Components/Post/Post'
 import classes from './Feed.module.css'
 
 const feed: React.FC = () => {

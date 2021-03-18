@@ -1,7 +1,7 @@
 .Container{
 	position:relative;
   width: 30vw;
-	left:35vw;
+	left:10vw;
 	top:15vh;
   background-color: rgba(0, 0, 0);
 	border-radius:3px;
@@ -94,13 +94,13 @@
 @media (max-width:1024px){
   .Container{
     width: 42vw;
-    left: 29vw;
+    left: 9vw;
   }
 }
 @media (max-width:768px){
   .Container{
     width: 52vw;
-    left: 24vw;
+    left: 14vw;
   }
 }
 @media (max-width:425px){

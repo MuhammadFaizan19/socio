@@ -1,5 +1,5 @@
 import React from 'react'
-import Notification from './Notification/Notification'
+import Notification from '../../Components/Notification/Notification'
 import classes from './Notifications.module.css'
 
 const notifications: React.FC = () => {

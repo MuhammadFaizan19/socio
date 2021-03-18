@@ -1,12 +1,12 @@
 import React from 'react'
-import Post from '../Post/Post'
+import Post from '../../Components/Post/Post'
 import classes from './Profile.module.css'
-import UserInfo from './User/User'
+import User from '../../Components/User/User'
 
 const profile: React.FC = () => {
     return (
         <div className={classes.Container} >
-            <UserInfo />
+            <User />
             <Post/>
         </div>
     )
